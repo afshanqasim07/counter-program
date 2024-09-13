@@ -1,0 +1,112 @@
+/* Global reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f8fb;
+}
+
+/* Counter box styling */
+#counterbox {
+    background-color: #fff;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 100%;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Inner div styling */
+.innerdiv h2 {
+    color: #333;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.innerdiv h1 {
+    color: #3498db;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Button styling */
+.btn {
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effects */
+.btn:hover {
+    background-color: #2e8ac7;
+    transform: scale(1.05);
+}
+
+/* Active effects */
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Increment button color */
+#inc {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Decrement button color */
+#dec {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Reset button color */
+#stop {
+    background-color: #95a5a6;
+    color: white;
+}
+
+/* Responsive media queries for smaller screens */
+@media (max-width: 768px) {
+    #counterbox {
+        padding: 30px;
+    }
+
+    .innerdiv h2 {
+        font-size: 1.8rem;
+    }
+
+    .innerdiv h1 {
+        font-size: 3rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #counterbox {
+        padding: 20px;
+    }
+
+    .innerdiv h2 {
+        font-size: 1.5rem;
+    }
+
+    .innerdiv h1 {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
